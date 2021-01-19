@@ -41,7 +41,7 @@ dependencies:
   flutter_easyloading:
   flutter_slidable:  
 
-  ads: 
+  # ads: 
   cloud_firestore:
   sweetsheet:
   uuid:  

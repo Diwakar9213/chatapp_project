@@ -56,7 +56,7 @@ class HomeController extends SuperController<CasesModel> {
   //storage
   final box = GetStorage();
 
-  AdsHelper adsHelper = AdsHelper.instance;
+  // AdsHelper adsHelper = AdsHelper.instance;
   final PushNotificationsManager _pushNotificationsManager =
       PushNotificationsManager();
 
@@ -105,15 +105,15 @@ class HomeController extends SuperController<CasesModel> {
     update();
 
     // trigger click from bottombar navigation
-    if (index == 1) {
-      ChatManager.to.init();
-    } else if (index == 2) {
-      adsHelper.ads.showFullScreenAd();
-    } else if (index == 3) {
-      adsHelper.ads.showBannerAd();
-    } else {
-      adsHelper.ads.closeBannerAd();
-    }
+    // if (index == 1) {
+    //   ChatManager.to.init();
+    // } else if (index == 2) {
+    //   adsHelper.ads.showFullScreenAd();
+    // } else if (index == 3) {
+    //   adsHelper.ads.showBannerAd();
+    // } else {
+    //   adsHelper.ads.closeBannerAd();
+    // }
 
     getAllUserChatFirebase();
   }
